@@ -6,6 +6,7 @@
     <div class="card mb-3">
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text text-muted">Published on: {{ post.date_created.strftime('%B %d, %Y') }}</p>
             <p class="card-text">{{ post.content[:100] }}...</p>
             <a href="/post/{{ post.id }}" class="btn btn-primary">Read More</a>
 
